@@ -9,7 +9,7 @@ function atividade3() {
         salario => salario <= 1000 ? salario * 8/100 : (salario <= 1500 ? salario * 8.5/100 : salario * 9/100),
         params => {
             const {nome, salario, taxaDeDescontoDoINSS, salarioLiquido} = params
-            html.innerHTML += `<p>O salário de ${nome} salário liquido foi de ${salarioLiquido}</p>`
+            html.innerHTML += `<p>O salário de ${nome} foi de ${salarioLiquido}</p>`
             html.innerHTML += `<p>A taxa de INSS foi de ${taxaDeDescontoDoINSS / salario * 100}%</p>`
             html.innerHTML += `<p>O valor do INSS foi de ${taxaDeDescontoDoINSS}</p>`
         }
